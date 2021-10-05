@@ -3,6 +3,7 @@ import operacionExponencial from './origen.js'; // La importación del default n
                                                 // El default se puede importar con otro nombre directamente
 import {suma as plus, resta as minus} from './origen.js';
 import * as all from './origen.js'; // Importación de todo
+import Fecha from './Fecha.js';  // Buena práctica porque el default se llama como el archivo
 
 console.log(mensaje);
 console.log(suma(2,3));
@@ -16,4 +17,6 @@ console.log(minus(100, 80));
 
 console.log(all.suma(6, 8));
 
-console.log(all.aviso); // Lo que no esté exportado no se podrá consumir
+// console.log(all.aviso); Lo que no esté exportado no se podrá consumir
+
+console.log(Fecha.getMarcaTiempo('2021-10-18'));
